@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('Slfont-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body
 {
     background-color: #808080;
@@ -23,22 +30,37 @@ body
     left: 50%;
     transform: translateX(-50%);
 }
-.buttons button
+.buttons a
 {
     background-color: #606060;
     border: 0px;
     border-radius: 10px;
     transition-duration: 0.2s;
 
-    font-size: 20px;
-    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'MyFont';
 
     flex: 1;
     margin: 0 5px;
     height: 80%;
 }
-.buttons button:hover { background-color: #585858; border-radius: 20px; cursor: pointer; }
-.buttons button:active { background-color: #505050; }
+.buttons a button
+{
+    background-color: rgba(0, 0, 0, 0);;
+    border: 0px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'MyFont';
+
+    width: 100%;
+    height: 100%;
+}
+.buttons a:hover { background-color: #585858; border-radius: 20px; cursor: pointer; }
+.buttons a:active { background-color: #505050; }
 
 .CenterMain
 {
@@ -50,8 +72,6 @@ body
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-.MyName { font-size: 16px; color: #585858; }
-.QuneText { font-size: 50px; color: #ff6a00; }
 .Medias {
     width: 140px;
     height: 0px;
